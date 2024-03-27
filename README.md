@@ -1,2 +1,22 @@
-# nitrogen
-Dépôt Github du bot NitroGen !
+<div align="center">
+  <a href="https://dsc.gg/nitrogen"><img src="https://github.com/20syldev/nitrogen/blob/main/src/nitrogen.png" alt="Logo" width="25%" height="auto"></a>
+
+# Coop Status - Bot Discord
+  [![Badge1](https://img.shields.io/badge/Bot%20:-v1.0.0-6479ee?labelColor=23272A)](https://dsc.gg/nitrogen)
+  [![Badge2](https://img.shields.io/discord/1130900688491253891?logo=discord&labelColor=23272A&label=Discord&color=5e60ce)](https://dsc.gg/nitrogen)
+
+</div>
+
+---
+
+## À propos du bot
+Le bot **NitroGen** génère des codes Nitro aléatoirement sur [serveur support Discord](https://dsc.gg/nitrogen). Ce sont seulement des caractères aléatoires donc pas d'arnaque, juste de la chance !
+> *Le bot est privé, donc vous ne pouvez pas l'inviter certes, mais vous pouvez toujours copier le code source pour faire votre bot avec nos fonctionnalités !*
+
+## Les caractéristiques
+- Hébergé **24h/7j**
+- Détection de rôle pour :
+  - **Tiers 1** : 1 minute de cooldown entre chaque message.
+  - **Tiers 2** : 30 secondes de cooldown entre chaque message.
+  - **Tiers 3** : 10 secondes de cooldown entre chaque message.
+- Statut Discord personnalisé, avec l'ajout d'un rôle **VIP** lorsqu'un certain statut est mit.
