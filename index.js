@@ -28,7 +28,7 @@ client.on('ready', (x) => {
             type: ActivityType.Listening,
         },
         {
-            name: `${vip} donateurs`,
+            name: `${vip} vip`,
             type: ActivityType.Watching,
         },
         {
