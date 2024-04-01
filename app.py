@@ -1,6 +1,4 @@
-from flask import Flask, render_template
-import random
-import io
+from flask import Flask, render_template, abort
 
 app = Flask(__name__, template_folder="src", static_folder="src")
 
