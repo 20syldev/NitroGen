@@ -11,7 +11,15 @@ app.listen(port, () => {
     console.log(`Serveur défini avec le port ${port}`);
 });
 
+// https
+var https = require('https');
 
+https.createServer(function (req, res) {
+    res.write('Bot en ligne');
+    res.end();
+}).listen(8080);
+
+// Discord
 client.on('ready', (x) => {
     console.log(`✅ ${x.user.tag} en ligne !`);
     const serveur = client.guilds.cache.get('1130900688491253891');
