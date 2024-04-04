@@ -2,8 +2,9 @@
   <a href="https://dsc.gg/nitrogen"><img src="https://github.com/20syldev/nitrogen/blob/main/src/nitrogen.png" alt="Logo" width="25%" height="auto"></a>
 
 # NitroGen - Bot Discord
-  [![Badge1](https://img.shields.io/badge/Bot%20:-v1.0.0-6479ee?labelColor=23272A)](https://dsc.gg/nitrogen)
-  [![Badge2](https://img.shields.io/discord/1130900688491253891?logo=discord&labelColor=23272A&label=Discord&color=5e60ce)](https://dsc.gg/nitrogen)
+  [![Badge1](https://img.shields.io/badge/Bot%20:-v1.1.0-6479ee?labelColor=23272A)](https://dsc.gg/nitrogen)
+  [![Badge2](https://img.shields.io/badge/Développement%20:-Terminé-37a658?labelColor=23272A)](https://dsc.gg/nitrogen)
+  [![Badge3](https://img.shields.io/discord/1130900688491253891?logo=discord&labelColor=23272A&label=Discord&color=5e60ce)](https://dsc.gg/nitrogen)
 
 </div>
 
