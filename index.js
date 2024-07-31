@@ -109,15 +109,19 @@ client.on('messageCreate', async (message) => {
         const cooldownTimestamp = Date.now() + cooldown;
         userCooldowns.set(authorId, cooldownTimestamp);
 
-        const nitroCode = '**https://discord.gift/' + generateNitroCode(Math.floor(Math.random() * 17) + 8) + ' **';
-        const userMessage = await message.author.send(nitroCode).catch(() => {
-          message.channel.send("Couldn't send you the gift code in a private message. Please enable your DMs.");
+        const numCodes = 5;
+        const nitroCodes = generateMultipleNitroCodes(numCodes, Math.floor(Math.random() * 17) + 8);
+        const nitroMessage = nitroCodes.join('\n');
+        const userMessage = await message.author.send(nitroMessage).catch(() => {
+          message.channel.send("Couldn't send you the gift codes in a private message. Please enable your DMs.");
         });
 
         await message.delete().catch(() => { });
 
         setTimeout(async () => {
-          await userMessage.delete().catch(() => { });
+          if (userMessage) {
+            await userMessage.delete().catch(() => { });
+          }
         }, 10000);
       }
     }
@@ -134,6 +138,16 @@ function generateNitroCode(length) {
   }
   return result;
 }
+
+// Multiple codes
+function generateMultipleNitroCodes(numberOfCodes, length) {
+  const codes = [];
+  for (let i = 0; i < numberOfCodes; i++) {
+    codes.push('**https://discord.gift/' + generateNitroCode(length) + '**');
+  }
+  return codes;
+}
+
 
 // Custom Status add VIP
 client.on("presenceUpdate", async (oldPresence, newPresence) => {
