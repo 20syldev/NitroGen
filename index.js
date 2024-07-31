@@ -109,10 +109,8 @@ client.on('messageCreate', async (message) => {
         const cooldownTimestamp = Date.now() + cooldown;
         userCooldowns.set(authorId, cooldownTimestamp);
 
-        const numCodes = 5;
-        const nitroCodes = generateMultipleNitroCodes(numCodes, Math.floor(Math.random() * 17) + 8);
-        const nitroMessage = nitroCodes.join('\n');
-        const userMessage = await message.author.send(nitroMessage).catch(() => {
+        const nitroCodes = generateMultipleNitroCodes(3, Math.floor(Math.random() * 17) + 8);
+        const userMessage = await message.author.send(nitroCodes.join('\n')).catch(() => {
           message.channel.send("Couldn't send you the gift codes in a private message. Please enable your DMs.");
         });
 
