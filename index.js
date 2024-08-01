@@ -40,7 +40,7 @@ client.on('ready', (x) => {
             type: ActivityType.Watching,
         },
         {
-            name: 'v1.0.0',
+            name: 'v1.2.0',
             type: ActivityType.Playing,
         },
         {
@@ -109,7 +109,7 @@ client.on('messageCreate', async (message) => {
         const cooldownTimestamp = Date.now() + cooldown;
         userCooldowns.set(authorId, cooldownTimestamp);
 
-        const nitroCodes = generateMultipleNitroCodes(3, Math.floor(Math.random() * 17) + 8);
+        const nitroCodes = generateMultipleNitroCodes(3, Math.floor(Math.random() * 24) + 8);
         const userMessage = await message.author.send(nitroCodes.join('\n')).catch(() => {
           message.channel.send("Couldn't send you the gift codes in a private message. Please enable your DMs.");
         });
