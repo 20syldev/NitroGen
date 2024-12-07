@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://sylvain.pro/nitrogen"><img src="https://github.com/20syldev/nitrogen/blob/main/src/nitrogen.png" alt="Logo" width="25%" height="auto"></a>
+  <a href="https://sylvain.pro/nitrogen"><img src="https://github.com/20syldev/nitrogen/blob/master/src/nitrogen.png" alt="Logo" width="25%" height="auto"></a>
 
   # NitroGen - Bot Discord
   [![Bot](https://custom-icon-badges.demolab.com/badge/Bot%20:-v1.2.0-6479ee?logo=nitrogen&labelColor=23272A)](https://github.com/20syldev/nitrogen/releases/latest)
